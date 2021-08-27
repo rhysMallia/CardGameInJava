@@ -1,0 +1,27 @@
+README:	
+	Features:
+		Clear bet may be done through the menu drop down or by entering 0 into the button based bet dialog box
+		
+		Placing a new bet after a round is complete will clear the previous result, bets and the win/loss,
+		this is in order to clear the "game state' for the players otherwise it would be too hard to tell via the UI which players needed to set bets and to draw cards.
+		
+		if you place a bet of 10, with a reserve of 90, you are able to set a bet of 100 without resetting a bet first
+		
+		Options that are not normally needed for regular play (imo) such as reset bet, remove player, and exit, are located
+		in the Menu drop down rather than having a dedicated button on the UI to avoid clutter
+			
+
+BUG LIST:
+	When you create a new player, if there has been previously deleted players, an ID will be assigned that has not
+	been created yet, this is due to previous problems with players being replaced such as when player 1 is removed and 
+	a new player is added on top of player 2.
+		Ex: Add Player 1
+			Add Player 2
+			Add Player 3
+			delete Player 2
+			add Player 4
+			
+	If you have opened a diaglog box, and then attempt to press the button for it again, it does not bring the
+	dialog box to the front and you have to manually open it through the tabbed windows thing on your taskbar
+	
+	
